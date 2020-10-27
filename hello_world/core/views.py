@@ -4,3 +4,16 @@ from django.shortcuts import render, HttpResponse
 
 def hello(request, nome, idade):
     return HttpResponse('<h1>Hello {} de {} anos</h1>' .format(nome, idade))
+
+
+def soma(request, num1, num2):
+    return HttpResponse('<h1>{}</h1>' .format(num1+num2))
+
+def subtracao(request, num1, num2):
+    return HttpResponse('<h1>{}</h1>' .format(num1-num2))
+
+def multiplicacao(request, num1, num2):
+    return HttpResponse('<h1>{}</h1>' .format(num1*num2))
+
+def divisao(request, num1, num2):
+    return HttpResponse('<h1>{}</h1>' .format(num1/num2))
